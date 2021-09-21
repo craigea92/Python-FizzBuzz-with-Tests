@@ -20,3 +20,8 @@ class TestFizzBuzz(unittest.TestCase):
     for i in [15, 30, 45, 60]:
       print('testing', i)
       assert fizzbuzz(i) == 'FizzBuzz'
+  
+  def test_notdivisble(self):
+    for i in [2, 4, 11, 88]:
+      print('testing', i)
+      assert fizzbuzz(i) == i
