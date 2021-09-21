@@ -10,3 +10,8 @@ class TestFizzBuzz(unittest.TestCase):
     for i in [3, 6, 9, 18]:
       print('testing', i)
       assert fizzbuzz(i) == 'Fizz'
+  
+  def test_buzz(self):
+    for i in [5, 10, 50, 100]:
+      print('testing', i)
+      assert fizzbuzz(i) == 'Buzz'
